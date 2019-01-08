@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#ddf3f8">Презентация на тему: "Функции и процедуры"</section>
+        <section data-background="#ddf3f8">
+          <section data-markdown>
+            <textarea data-template>
+              ## Что такое функции и процедуры?
+          
+              Во всех программах есть группы команд которые выполняются много раз. Таким группам присваивают имена, а для того чтобы выполнить их, указывают только их имена. Такие группы команд называются процедурами и функциями.
+              <img src="img/code.png" alt="">
+            </textarea>
+          </section>
+          <section data-markdown>
+              <textarea data-template>
+                  ## Что такое фунция?
+                  <ul>
+                      <li>Функция- группы команд, которые при своем выполнении производят какие- либо вычисления и соответственно возвращают какое- то значение</li>
+                      <li>Пример: вычисление синуса, модуль числа
+                        </li>
+                    </ul>
+                    <img src="img/code (1).png" alt="">
+              </textarea>
+          </section>
+        </section>
+        <section data-background="#ddf3f8">
+            <section data-markdown>
+              <textarea data-template>
+                ## Что такое процедура?
+            
+                <ul>
+                    <li>Процедурами называют какие- либо действия, которые выполняет программа
+                      </li>
+                    <li>Пример: очищает экран, считывает данные с клавиатуры.
+                      </li>
+                  </ul>
+                <img src="img/code (2).png" alt="">
+              </textarea>
+            </section>
+            <section data-markdown data-background="#ddf3f8">
+                <textarea data-template>
+                    ## Функции и процедуры двух видов:
+                    <ul>
+                        <li>Стандартные- входят в состав языка и вызывается для выполнения по своему имени</li>
+                        <li>Пользовательские- функции и процедуры спроектированные разработчиком программы.</li>
+                      </ul>
+                      <img src="img/code (3).png" alt="">
+                </textarea>
+            </section>
+          </section>
+          <section data-markdown data-background="#ddf3f8">
+              <textarea data-template>
+                  ## Создание функции
+                  В javascript функции являются полноценными объектами встроенного класса Function. Именно поэтому их можно присваивать переменным, передавать и, конечно, у них есть свойства
+
+                    <img src="img/code (4).png" alt="">
+                    <img src="img/code (5).png" alt="">
+              </textarea>
+          </section>
+          <section data-markdown data-background="#ddf3f8">
+              <textarea data-template>
+                  ## Отличие функции от процедуры
+                  <ul>
+                    <li>Между функцией и процедурой имеется несколько различий. Наиболее существенное состоит  в том, что функция всегда возвращает одно конкретное значение, тогда как процедура нет.  Это различие отражается в особенности объявления процедур и функций.</li>
+                  </ul>
+              </textarea>
+          </section>
+          <section data-background="#ddf3f8">
+              <section data-markdown>
+                <textarea data-template>
+                  ## Пример написания функции
+              
+                  <ul>
+                      <li>Дана задача: написать функцию для нахождения наибольшего из двух чисел.</li>                    
+                  </ul>
+                  <img src="img/pasted-from-clipboard.png" alt="">
+                </textarea>
+              </section>
+              <section data-markdown data-background="#ddf3f8">
+                  <textarea data-template>
+                      ## Создание процедуры
+
+                        <img src="img/code (6).png" alt="">
+                  </textarea>
+              </section>
+              <section data-markdown data-background="#ddf3f8">
+                  <textarea data-template>
+                      ## Пример написания процедуры
+                      
+                        <img src="img/code (7).png" alt="">
+                  </textarea>
+              </section>
+            </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
